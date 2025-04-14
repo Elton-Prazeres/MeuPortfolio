@@ -475,8 +475,14 @@ main .sobre {
 
 .resume-generica .experience-content div {
     background-color: #222;
+    animation: ladoSecao .5s ease-in-out forwards;
+    display: none;
     padding: 40px;
     position: relative;
+}
+
+.resume-generica .experience-content div.ativo {
+    display: block;
 }
 
 .resume-generica .experience-content div::before {
@@ -505,11 +511,18 @@ main .sobre {
     font-size: 1.1rem;
 }
 
+
+.resume-generica .experience-content ul li.ativo {
+    color: #3e3d3d;
+}
+
 /* MEUS DIPLOMAS E CURSOS */
 
 .resume-generica .education-content div {
     background-color: #222;
     padding: 40px;
+    display: none;
+    animation: ladoSecao .5s ease-in-out forwards;
     position: relative;
 }
 
@@ -546,4 +559,12 @@ main .sobre {
 .resume-generica .education-content div p {
     color: #707070;
     font-size: 1.1rem;
+}
+
+.resume-generica .education-content ul li.ativo {
+    color: #3e3d3d;
+}
+
+.resume-generica .education-content div.ativo {
+    display: block;
 }
